@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Layout } from "@/components/Layout";
-import { findProduct, PRODUCTS, blockBg, blockText } from "@/data/products";
+import { findProduct, PRODUCTS, blockBg, blockText, type Product } from "@/data/products";
 import { whatsappLink } from "@/lib/config";
 
 export const Route = createFileRoute("/producto/$slug")({
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/producto/$slug")({
 });
 
 function ProductPage() {
-  const { product: p } = Route.useLoaderData();
+  const { product: p } = Route.useLoaderData() as { product: Product };
   const others = PRODUCTS.filter((x) => x.slug !== p.slug);
   const [idx, setIdx] = useState(0);
   const alt = others[idx];

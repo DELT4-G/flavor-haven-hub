@@ -298,11 +298,11 @@ export const blockText: Record<BlockColor, string> = {
 };
 
 export const FLAVOR_CATEGORIES: { tag: FlavorTag; label: string; color: BlockColor; desc: string }[] = [
-  { tag: "frutal", label: "Frutales", color: "pink", desc: "Frambuesa, mango, fresa, uva..." },
+  { tag: "frutal", label: "Frutales", color: "magenta", desc: "Frambuesa, mango, fresa, sandía, uva..." },
   { tag: "mentol", label: "Mentolados", color: "mint", desc: "Frescor polar, hielo y menta." },
-  { tag: "postre", label: "Postres", color: "coral", desc: "Vainilla, cremas, galleta." },
-  { tag: "bebida", label: "Bebidas", color: "orange", desc: "Cola, root beer, mojito." },
-  { tag: "tabaco", label: "Tabaco", color: "blue", desc: "Notas clásicas y maduras." },
+  { tag: "postre", label: "Postres", color: "coral", desc: "Vainilla, donut, galleta, crema." },
+  { tag: "bebida", label: "Bebidas", color: "orange", desc: "Cola, root beer, mojito, limonada." },
+  { tag: "tabaco", label: "Tabaco", color: "mocha", desc: "Notas clásicas, caramelo y madera." },
 ];
 
 export function findProduct(slug: string) {

@@ -40,6 +40,12 @@
   --color-cream: var(--brand-cream);
   --color-mint: var(--brand-mint);
   --color-grape: var(--brand-grape);
+  --color-lime: var(--brand-lime);
+  --color-sky: var(--brand-sky);
+  --color-peach: var(--brand-peach);
+  --color-mocha: var(--brand-mocha);
+  --color-sun: var(--brand-sun);
+  --color-magenta: var(--brand-magenta);
 
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;
@@ -68,14 +74,20 @@
   --input: oklch(0.9 0.02 80);
   --ring: oklch(0.7 0.04 260);
 
-  /* Brand block colors (SunSip-inspired) */
+  /* Brand block colors */
   --brand-pink: oklch(0.72 0.22 350);
   --brand-blue: oklch(0.38 0.13 255);
   --brand-coral: oklch(0.68 0.2 25);
-  --brand-orange: oklch(0.75 0.18 55);
+  --brand-orange: oklch(0.72 0.19 55);
   --brand-cream: oklch(0.96 0.03 85);
-  --brand-mint: oklch(0.72 0.12 200);
+  --brand-mint: oklch(0.78 0.13 195);
   --brand-grape: oklch(0.45 0.18 305);
+  --brand-lime: oklch(0.82 0.2 135);
+  --brand-sky: oklch(0.78 0.13 230);
+  --brand-peach: oklch(0.82 0.12 50);
+  --brand-mocha: oklch(0.42 0.08 50);
+  --brand-sun: oklch(0.88 0.17 95);
+  --brand-magenta: oklch(0.55 0.27 340);
 }
 
 @layer base {

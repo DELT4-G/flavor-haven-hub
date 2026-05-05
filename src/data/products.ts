@@ -4,8 +4,16 @@ import cola from "@/assets/vape-cola.png";
 import mint from "@/assets/vape-mint.png";
 import mango from "@/assets/vape-mango.png";
 import grape from "@/assets/vape-grape.png";
+import watermelon from "@/assets/vape-watermelon.png";
+import blueberry from "@/assets/vape-blueberry.png";
+import mojito from "@/assets/vape-mojito.png";
+import tobacco from "@/assets/vape-tobacco.png";
+import peach from "@/assets/vape-peach.png";
+import donut from "@/assets/vape-donut.png";
 
-export type BlockColor = "pink" | "blue" | "coral" | "orange" | "mint" | "grape";
+export type BlockColor =
+  | "pink" | "blue" | "coral" | "orange" | "mint" | "grape"
+  | "lime" | "sky" | "peach" | "mocha" | "sun" | "magenta";
 
 export type FlavorTag = "frutal" | "mentol" | "postre" | "tabaco" | "bebida";
 
@@ -143,6 +151,120 @@ export const PRODUCTS: Product[] = [
     ingredients: ["VG/PG 50/50", "Sales de nicotina", "Aroma de uva Concord", "Mentol"],
     level: "intermedio",
   },
+  {
+    slug: "watermelon-fresh",
+    name: "Watermelon Fresh",
+    brand: "Eatamellon",
+    flavor: "Sandía fresca",
+    flavorTag: "frutal",
+    type: "desechable",
+    puffs: 9000,
+    nicotine: 20,
+    battery: 650,
+    price: 14.5,
+    color: "lime",
+    image: watermelon,
+    short: "Sandía jugosa recién cortada con un toque mineral.",
+    description:
+      "Pulpa de sandía dulce con un fondo ligeramente acuoso y refrescante. Como morder una rodaja en pleno verano.",
+    ingredients: ["VG/PG 60/40", "Sales de nicotina", "Aroma de sandía"],
+    level: "principiante",
+  },
+  {
+    slug: "blueberry-burst",
+    name: "Blueberry Burst",
+    brand: "Elotid Voods",
+    flavor: "Arándano salvaje",
+    flavorTag: "frutal",
+    type: "desechable",
+    puffs: 10000,
+    nicotine: 20,
+    battery: 700,
+    price: 15.9,
+    color: "sky",
+    image: blueberry,
+    short: "Arándanos silvestres jugosos con un toque ácido.",
+    description:
+      "Arándanos azules pequeños y maduros, intensamente afrutados con un fondo dulce. Ideal todo el día.",
+    ingredients: ["VG/PG 60/40", "Sales de nicotina", "Aroma de arándano"],
+    level: "intermedio",
+  },
+  {
+    slug: "lime-mojito",
+    name: "Lime Mojito",
+    brand: "Couize",
+    flavor: "Mojito de lima",
+    flavorTag: "bebida",
+    type: "desechable",
+    puffs: 8000,
+    nicotine: 20,
+    battery: 600,
+    price: 13.9,
+    color: "lime",
+    image: mojito,
+    short: "Lima fresca, menta y un golpe de soda burbujeante.",
+    description:
+      "Cócktail tropical sin alcohol: lima cítrica, menta picada y burbuja sutil. Refrescante y ligero.",
+    ingredients: ["VG/PG 50/50", "Sales de nicotina", "Aroma de lima", "Menta"],
+    level: "intermedio",
+  },
+  {
+    slug: "caramel-tobacco",
+    name: "Caramel Tobacco",
+    brand: "Flindls",
+    flavor: "Caramelo & Tabaco",
+    flavorTag: "tabaco",
+    type: "pod",
+    puffs: 6000,
+    nicotine: 20,
+    battery: 550,
+    price: 12.9,
+    color: "mocha",
+    image: tobacco,
+    short: "Tabaco rubio envuelto en caramelo tostado y vainilla.",
+    description:
+      "Notas amaderadas suaves de tabaco rubio combinadas con caramelo cremoso. Para fumadores nostálgicos.",
+    ingredients: ["VG/PG 50/50", "Sales de nicotina", "Aroma de tabaco rubio", "Caramelo"],
+    level: "experto",
+  },
+  {
+    slug: "pink-peach",
+    name: "Pink Peach",
+    brand: "Pink",
+    flavor: "Melocotón rosa",
+    flavorTag: "frutal",
+    type: "desechable",
+    puffs: 8000,
+    nicotine: 20,
+    battery: 600,
+    price: 13.9,
+    color: "peach",
+    image: peach,
+    short: "Melocotón maduro con néctar dulce y aterciopelado.",
+    description:
+      "Melocotón blanco jugoso con un toque de nectarina. Suave, dulce y con un final largo.",
+    ingredients: ["VG/PG 60/40", "Sales de nicotina", "Aroma de melocotón"],
+    level: "principiante",
+  },
+  {
+    slug: "donut-cookies",
+    name: "Donut Cookies",
+    brand: "Donut Safe",
+    flavor: "Donut & Galleta",
+    flavorTag: "postre",
+    type: "desechable",
+    puffs: 9000,
+    nicotine: 20,
+    battery: 650,
+    price: 14.9,
+    color: "sun",
+    image: donut,
+    short: "Donut glaseado recién horneado con trozos de galleta.",
+    description:
+      "Masa de donut, glaseado de azúcar y crujiente de galleta. Postre líquido para los más golosos.",
+    ingredients: ["VG/PG 70/30", "Sales de nicotina", "Aroma de donut", "Galleta", "Vainilla"],
+    level: "intermedio",
+  },
 ];
 
 export const blockBg: Record<BlockColor, string> = {
@@ -152,6 +274,12 @@ export const blockBg: Record<BlockColor, string> = {
   orange: "bg-orange",
   mint: "bg-mint",
   grape: "bg-grape",
+  lime: "bg-lime",
+  sky: "bg-sky",
+  peach: "bg-peach",
+  mocha: "bg-mocha",
+  sun: "bg-sun",
+  magenta: "bg-magenta",
 };
 
 export const blockText: Record<BlockColor, string> = {
@@ -161,14 +289,20 @@ export const blockText: Record<BlockColor, string> = {
   orange: "text-white",
   mint: "text-white",
   grape: "text-cream",
+  lime: "text-blue",
+  sky: "text-blue",
+  peach: "text-blue",
+  mocha: "text-cream",
+  sun: "text-blue",
+  magenta: "text-cream",
 };
 
 export const FLAVOR_CATEGORIES: { tag: FlavorTag; label: string; color: BlockColor; desc: string }[] = [
-  { tag: "frutal", label: "Frutales", color: "pink", desc: "Frambuesa, mango, fresa, uva..." },
+  { tag: "frutal", label: "Frutales", color: "magenta", desc: "Frambuesa, mango, fresa, sandía, uva..." },
   { tag: "mentol", label: "Mentolados", color: "mint", desc: "Frescor polar, hielo y menta." },
-  { tag: "postre", label: "Postres", color: "coral", desc: "Vainilla, cremas, galleta." },
-  { tag: "bebida", label: "Bebidas", color: "orange", desc: "Cola, root beer, mojito." },
-  { tag: "tabaco", label: "Tabaco", color: "blue", desc: "Notas clásicas y maduras." },
+  { tag: "postre", label: "Postres", color: "coral", desc: "Vainilla, donut, galleta, crema." },
+  { tag: "bebida", label: "Bebidas", color: "orange", desc: "Cola, root beer, mojito, limonada." },
+  { tag: "tabaco", label: "Tabaco", color: "mocha", desc: "Notas clásicas, caramelo y madera." },
 ];
 
 export function findProduct(slug: string) {

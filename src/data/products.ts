@@ -4,8 +4,16 @@ import cola from "@/assets/vape-cola.png";
 import mint from "@/assets/vape-mint.png";
 import mango from "@/assets/vape-mango.png";
 import grape from "@/assets/vape-grape.png";
+import watermelon from "@/assets/vape-watermelon.png";
+import blueberry from "@/assets/vape-blueberry.png";
+import mojito from "@/assets/vape-mojito.png";
+import tobacco from "@/assets/vape-tobacco.png";
+import peach from "@/assets/vape-peach.png";
+import donut from "@/assets/vape-donut.png";
 
-export type BlockColor = "pink" | "blue" | "coral" | "orange" | "mint" | "grape";
+export type BlockColor =
+  | "pink" | "blue" | "coral" | "orange" | "mint" | "grape"
+  | "lime" | "sky" | "peach" | "mocha" | "sun" | "magenta";
 
 export type FlavorTag = "frutal" | "mentol" | "postre" | "tabaco" | "bebida";
 

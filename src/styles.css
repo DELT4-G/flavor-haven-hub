@@ -40,6 +40,12 @@
   --color-cream: var(--brand-cream);
   --color-mint: var(--brand-mint);
   --color-grape: var(--brand-grape);
+  --color-lime: var(--brand-lime);
+  --color-sky: var(--brand-sky);
+  --color-peach: var(--brand-peach);
+  --color-mocha: var(--brand-mocha);
+  --color-sun: var(--brand-sun);
+  --color-magenta: var(--brand-magenta);
 
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;
